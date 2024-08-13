@@ -8,8 +8,8 @@ import base64
 import streamlit as st
 
 model = load_model('model.h5')
-ratings = pd.read_csv('ml-latest-small/ratings.csv')
-movies = pd.read_csv('ml-latest-small/movies.csv')
+ratings = pd.read_csv('ratings.csv')
+movies = pd.read_csv('movies.csv')
 
 # Function to create mappings between IDs and their encoded values
 def create_id_mappings(ids):
